@@ -1,0 +1,315 @@
+
+  .app-container {
+    font-size: 13px;
+    /* position: relative; */
+    height: 100%;
+    width: 100%;
+
+  }
+  .right-form{
+    position:absolute;
+    top: 230px;
+    right: 0;
+    /* background-color: #fff; */
+    /* border: 1px solid; */
+    width: 400px;
+    padding: 10px;
+  }
+
+  .main-content {
+    display: flex;
+    width: 100%;
+    border: 1px solid red;
+}
+
+
+
+  /* Navbar Styles */
+  .nav-logo img{
+    height: 70px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  nav button {
+    color: #007bff;
+    background: none;
+    border: none;
+  }
+  
+  /* Sidebar Styles */
+  aside {
+    width: 230px;
+    background-color: #101D54;
+    color: white;
+    height: calc(100vh - 40px);
+    padding: 20px;
+  }
+  
+  aside button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5A9DD4;
+    border: none;
+    text-align: left;
+    color: white;
+    border: 1px solid #5A9DD4;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  aside button:hover, aside button.active {
+    background-color: #192c7e;
+  }
+  
+  /* Transaction Panel Styles */
+  .transaction{
+
+    width: 100%;
+    margin-left: 10px;
+
+  }
+  .transaction-panel {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 800;
+  }
+
+  
+  .cash-in {
+    /* background-color: #dff0d8; */
+    color: #3c763d;
+    padding: 20px;
+  }
+  
+  .cash-out {
+    /* background-color: #f2dede; */
+    color: #a94442;
+    padding: 20px;
+
+    
+  }
+  
+  .net-balance {
+    /* background-color: #d9edf7; */
+    color: #31708f;
+    padding: 20px;
+
+  }
+  
+  /* Transaction Table Styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .Newbusiness{
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 15px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+.Newbusiness input{
+  padding: 7px;
+  border-radius: 4px;
+  /* width:160px ; */
+}
+.Newbusiness button{
+  border: 1px solid;
+  width: 150px;
+  text-align: center;
+  font-size: 0.8rem;
+  background-color: #101D54;
+}
+.Newbusiness img{
+  height: 90px;
+  width: 150px;
+}
+
+/* Feature css */
+.dashboard-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+
+.filters-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.filter-dropdown {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.download-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 14px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-button {
+  padding: 10px;
+  font-size: 14px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: -1px;
+}
+
+.actions-container {
+  display: flex;
+  justify-content: flex-end;
+}
+#business_names{
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  align-items: center;
+}
+.wapper-di{
+  position: relative;
+}
+#delete_dialog{
+  /* position: absolute; */
+  margin: 0 auto;
+  margin-top: 20%;
+  /* border: 1px solid black; */
+  height: 100%;
+  width: 30%;
+  z-index: 1;
+  background-color:white;
+  padding: 40px;
+  text-align: center;
+  
+  /* padding: 15px;
+  justify-content: center;
+  align-items: center;
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: #474e5d;
+  padding-top: 50px; */ 
+}
+#delete_dialog h2{
+  margin-bottom: 10px;
+}
+#inner_delete{
+  /* margin-top: 50px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#inner_delete button{
+  border-radius: 3px;
+  border: none;
+  width: 50px;
+  height: 30px;
+
+}
+#yes:hover{
+  background-color: red;
+
+}
+#no:hover{
+  background-color: green;
+}
+
+.fa-solid:hover{
+  color: red;
+}
+.deposit-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+#uploading{
+  color: red;
+  text-align: center;
+}
+.withdraw-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logout{
+  margin-left: 20px;
+  text-decoration: none;
+  color: #007bff;
+}

@@ -1,0 +1,171 @@
+.main-landing-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+}
+.left-landing-container {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.left-landing-container,
+.right-landing-container {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.logo-section {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-section img {
+  width: 200px;
+  height: auto;
+  object-fit: scale-down;
+}
+
+.content-landing {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-landing img {
+  max-width: 100%;
+  height: auto;
+}
+
+.des-landing-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Form */
+.right-landing-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.login-button {
+  padding: 10px;
+  background-color: #101d54;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-button:hover {
+  background-color: #13246c;
+}
+#uploading{
+  color: red;
+  text-align: center;
+}
+
+.create-account-link {
+  display: block;
+  text-align: left;
+  margin-top: 20px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.create-account-link:hover {
+  text-decoration: underline;
+}
+.login-reg-btn {
+  margin: 5px 0px;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .main-landing-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-landing-container,
+  .right-landing-container {
+    width: 100%;
+  }
+
+  .content-landing img {
+    height: auto;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-section img {
+    width: 150px;
+    height: auto;
+  }
+
+  .content-landing img {
+    max-height: 250px;
+  }
+
+  .des-landing-container h3 {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form-container {
+    padding: 10px;
+  }
+
+  .login-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .form-group input {
+    padding: 6px;
+  }
+
+  .des-landing-container h3 {
+    font-size: 1em;
+  }
+}
